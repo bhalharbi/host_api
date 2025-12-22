@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "event_name": "LEAP Tech Event 2025",
+    "event_name_ar": "مؤتمر ومعرض ليب 2025",
+    "slug": "leap-2025",
+    "category": "Technology",
+    "type": "Exhibition & Conference",
+    "status": "scheduled",
+
+    "dates": {
+      "start_date": "2025-02-09",
+      "end_date": "2025-02-12",
+      "timezone": "Asia/Riyadh"
+    },
+
+    "address": {
+      "venue": "Riyadh Exhibition & Convention Center",
+      "street": "Riyadh Exhibition Road",
+      "district": "Malham",
+      "city": "Riyadh",
+      "zipcode": "13715",
+      "country": "Saudi Arabia"
+    },
+
+    "description": {
+      "short_ar": "حدث تقني عالمي يجمع قادة التكنولوجيا والابتكار.",
+      "short_en": "A global technology event bringing together innovators and tech leaders.",
+      "full_ar": "مؤتمر ومعرض ليب هو أحد أكبر الأحداث التقنية في العالم، يُقام في المملكة العربية السعودية، ويجمع شركات تقنية عالمية، شركات ناشئة، مستثمرين، ومتحدثين دوليين لمناقشة أحدث الاتجاهات في التقنية.",
+      "full_en": "LEAP is one of the world’s largest technology events, hosted in Saudi Arabia, bringing together global tech companies, startups, investors, and international speakers."
+    },
+
+    "statistics": {
+      "expected_attendees": 201000,
+      "exhibitors": 1800,
+      "speakers": 1000,
+      "startups": 600,
+      "investors": 1900,
+      "countries_participating": 170
+    },
+
+    "tracks": [
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Cloud Computing",
+      "Smart Cities",
+      "Health Tech",
+      "FinTech",
+      "Startups & Innovation"
+    ],
+
+    "organizers": [
+      {
+        "name": "Ministry of Communications and Information Technology",
+        "short_name": "MCIT",
+        "type": "Government"
+      },
+      {
+        "name": "Saudi Federation for Cybersecurity, Programming and Drones",
+        "short_name": "SAFCSP",
+        "type": "Government"
+      },
+      {
+        "name": "Tahaluf",
+        "type": "Event Organizer"
+      }
+    ],
+
+    "tickets": {
+      "registration_required": true,
+      "price": "Free",
+      "registration_url": "https://onegiantleap.com/"
+    },
+
+    "media": {
+      "logo": "https://onegiantleap.com/assets/logo.png",
+      "cover_image": "https://onegiantleap.com/assets/cover.jpg"
+    },
+
+    "contact": {
+      "email": "info@onegiantleap.com",
+      "phone": null
+    },
+
+    "created_at": "2024-10-01T12:00:00Z",
+    "updated_at": "2025-01-10T08:30:00Z"
+  }
+]
