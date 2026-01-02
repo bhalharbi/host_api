@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> دروسي</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+
+
+  <div class="header-shell">
+    <div class="header-shell__inner">
+      <div class="brand brand--pro">
+                <img src="logo_tvtc.svg" alt="" width="200px">
+
+      </div>
+
+      <div class="topbar__actions topbar__actions--pro">
+        <button id="adminBtn" class="btn btn--primary" type="button">لوحة التحكم</button>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="header-shell__crumbs">
+      <nav id="breadcrumb" class="breadcrumb breadcrumb--pro" aria-label="breadcrumb"></nav>
+    </div>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="pagehead">
+      <h1 id="pageTitle" class="pagehead__title"></h1>
+      <p id="pageDesc" class="pagehead__desc"></p>
+    </section>
+
+    <div id="adminHint" class="adminhint hidden">
+      اسحب وأفلت لترتيب العناصر (Drag & Drop)
+    </div>
+
+    <section id="viewRoot"></section>
+  </main>
+
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <div class="modal__head">
+        <button id="modalClose" class="iconbtn" type="button" aria-label="إغلاق">✕</button>
+        <div class="modal__title" id="modalTitle">عنوان</div>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__foot" id="modalFoot"></div>
+    </div>
+  </div>
+<footer class="site-footer">
+
+
+  <div class="footer-bottom">
+    <div class="footer-bottom__inner">
+<span>
+ برمجة وتطوير م.طارق حمدي الحربي رئيس قسم الحاسب وتقنية المعلومات - الكلية التقنية ببقعاء © <span id="year"></span> 
+</span>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
