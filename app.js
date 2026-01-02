@@ -23,6 +23,67 @@ let state = {
   adminMode: false,
 };
 
+// ✅ بيانات افتراضية تُستخدم إذا لم يوجد أي شيء في LocalStorage (مهم على GitHub Pages لأول مرة)
+function defaultData(){
+  return {
+    sections: [
+      {
+        id: uid("sec"),
+        title: "الحاسب وتقنية المعلومات",
+        desc: "التخصص: الدعم الفني للحاسب",
+        order: 1,
+        courses: [
+          {
+            id: uid("crs"),
+            title: "مقدمة JavaScript (JS-101)",
+            desc: "التخصص: الدعم الفني للحاسب",
+            order: 1,
+            lessons: [
+              {
+                id: uid("les"),
+                title: "الدرس الأول: مقدمة",
+                videoUrl: "https://www.youtube.com/watch?v=pa1tqpI02u4",
+                desc: "تعرف على JavaScript ولماذا نستخدمها.",
+                order: 1
+              },
+              {
+                id: uid("les"),
+                title: "الدرس الثاني: المتغيرات",
+                videoUrl: "https://www.youtube.com/watch?v=pa1tqpI02u4",
+                desc: "شرح المتغيرات وأنواع البيانات.",
+                order: 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: uid("sec"),
+        title: "تقنية الأعمال",
+        desc: "التخصص: تقنيات الأعمال المكتبية",
+        order: 2,
+        courses: [
+          {
+            id: uid("crs"),
+            title: "مبادئ إدارة الأعمال (ادار-101)",
+            desc: "التخصص: تقنيات الأعمال المكتبية",
+            order: 1,
+            lessons: [
+              {
+                id: uid("les"),
+                title: "الدرس الأول",
+                videoUrl: "https://www.youtube.com/watch?v=pa1tqpI02u4",
+                desc: "مدخل مبسّط لمفاهيم الإدارة.",
+                order: 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  };
+}
+
 function uid(prefix="id"){
   return prefix + "_" + Math.random().toString(16).slice(2) + "_" + Date.now().toString(16);
 }
@@ -561,7 +622,7 @@ function deleteLesson(sectionId, courseId, lessonId){
 
 /* Views */
 function renderHome(){
-  
+
   renderBreadcrumb([{label:"الرئيسية", onClick:()=>setRoute({view:"home"})}]);
 
   const wrap=document.createElement("div");
@@ -578,7 +639,7 @@ function renderHome(){
     })() : null;
 
     wrap.appendChild(card({
-      
+
       title:sec.title,
       desc:sec.desc,
       countBadges:[`المقررات:${(sec.courses||[]).length}`, `الدروس:${(sec.courses||[]).reduce((s,c)=>s+(c.lessons||[]).length,0)}`],
